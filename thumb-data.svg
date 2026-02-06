@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="360" rx="16" fill="#1a224a"/>
+<rect x="80" y="220" width="60" height="80" rx="8" fill="#6c8cff"/>
+<rect x="160" y="180" width="60" height="120" rx="8" fill="#2be4b6"/>
+<rect x="240" y="140" width="60" height="160" rx="8" fill="#6c8cff"/>
+<rect x="320" y="90" width="60" height="210" rx="8" fill="#2be4b6"/>
+<rect x="400" y="160" width="60" height="140" rx="8" fill="#6c8cff"/>
+<text x="60" y="60" fill="#e9efff" font-family="Inter, Arial" font-size="32" font-weight="800">Data Analysis with Python</text>
+</svg>

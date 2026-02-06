@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard • Learnify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/dashboard.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Learnify</a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Courses</a>
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="login.html">Log in</a>
+      <a class="btn btn-primary" href="signup.html">Sign up</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="dashboard">
+  <section class="container">
+    <h1>Your Learning Dashboard</h1>
+    <p class="muted">Track your progress and continue learning.</p>
+
+    <div class="dashboard-widgets">
+      <div class="widget">
+        <div class="widget-title">Streak</div>
+        <div id="streakCount" class="widget-value">0 days</div>
+      </div>
+      <div class="widget">
+        <div class="widget-title">Courses in progress</div>
+        <div id="inProgressCount" class="widget-value">0</div>
+      </div>
+      <div class="widget">
+        <div class="widget-title">Completed courses</div>
+        <div id="completedCount" class="widget-value">0</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Enrolled Courses</h2>
+    <div id="enrolledGrid" class="course-grid">
+      <!-- Enrolled course cards injected here -->
+    </div>
+
+    <div id="noEnrollments" class="empty-state">
+      <img src="assets/img/empty.svg" alt="No courses" />
+      <p>You haven’t enrolled in any courses yet. Explore the catalog to get started.</p>
+      <a href="index.html" class="btn btn-primary">Browse Courses</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="logo" href="index.html">Learnify</a>
+      <p class="muted">Learn anything, anytime. © <span id="year"></span></p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="mailto:support@example.com">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

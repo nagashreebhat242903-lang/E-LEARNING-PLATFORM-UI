@@ -1,0 +1,140 @@
+/* Learnify - Core Styles */
+:root{
+  --bg:#0b1020;          /* deep indigo */
+  --panel:#121936;       /* darker panel */
+  --card:#18214a;        /* card */
+  --muted:#9aa7bd;       /* muted text */
+  --text:#e9efff;        /* bright text */
+  --primary:#6c8cff;     /* blue */
+  --primary-600:#5072ff;
+  --accent:#2be4b6;      /* teal accent */
+  --danger:#ff6b6b;
+  --warning:#ffb347;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  background:linear-gradient(180deg, var(--bg) 0%, #0e1430 100%);
+  color:var(--text);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px, 92%);margin-inline:auto}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+.strong{font-weight:600}
+.hidden{display:none}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.7);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.header-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.logo{font-weight:800;letter-spacing:.4px}
+.nav{margin-left:auto;display:flex;gap:14px}
+.nav-link{padding:8px 12px;border-radius:10px;color:var(--muted)}
+.nav-link.active,.nav-link:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.header-cta{display:flex;gap:10px}
+.hamburger{display:none;background:none;border:0;cursor:pointer}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);margin:5px 0;border-radius:2px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:12px;border:1px solid transparent;cursor:pointer;transition:.15s box-shadow,.15s transform,.15s background}
+.btn-primary{background:linear-gradient(180deg, var(--primary), var(--primary-600));color:white;box-shadow:0 8px 20px rgba(108,140,255,.25)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(108,140,255,.35)}
+.btn-outline{border-color:rgba(255,255,255,.14);color:var(--text);background:rgba(255,255,255,.02)}
+.btn-outline:hover{background:rgba(255,255,255,.06)}
+.btn-ghost{background:transparent;border-color:transparent;color:var(--muted)}
+.btn-ghost:hover{color:var(--text);background:rgba(255,255,255,.06)}
+
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);color:#d3dcff;margin-right:8px;font-size:.85rem}
+
+/* Hero */
+.hero{padding:48px 0 18px;border-bottom:1px solid rgba(255,255,255,.06)}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.hero h1{font-size:2.2rem;margin:0 0 8px}
+.hero p{color:#c9d6ff;margin:0 0 16px}
+.hero-art{background:radial-gradient(600px 240px at 70% -10%, rgba(108,140,255,.35), transparent), radial-gradient(500px 220px at 10% 120%, rgba(43,228,182,.25), transparent);padding:10px;border-radius:16px}
+
+/* Filters */
+.filters{position:sticky;top:68px;background:rgba(11,16,32,.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);}
+.filters-inner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 0}
+.search-group{display:flex;gap:8px;flex:1}
+.search-group input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)}
+.chip-group{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.02);color:#cfe0ff;cursor:pointer}
+.chip.active,.chip:hover{background:rgba(108,140,255,.25);border-color:rgba(108,140,255,.45);color:white}
+.sort-group{margin-left:auto;display:flex;align-items:center;gap:8px}
+.sort-group select{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:var(--text)}
+
+/* Course Grid */
+.course-grid-section{padding:24px 0 60px}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.card-media{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg, rgba(108,140,255,.15), rgba(43,228,182,.15));}
+.card-body{padding:14px}
+.card-title{font-weight:700;margin:0 0 6px}
+.card-meta{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;color:#cfe0ff}
+.card-actions{margin-top:auto;padding:12px 14px;display:flex;gap:10px;border-top:1px solid rgba(255,255,255,.06)}
+
+.empty-state{display:grid;place-items:center;gap:12px;padding:36px 0;color:#cfe0ff}
+
+/* Course Page */
+.course-hero{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.course-hero h1{margin:4px 0}
+.course-content{padding:22px 0 48px}
+.course-content-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px}
+.video-wrapper{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.08)}
+.video-wrapper::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(400px 160px at 80% -10%, rgba(108,140,255,.18), transparent)}
+.course-description{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:16px;display:grid;gap:14px}
+.instructor{display:flex;gap:12px;align-items:center}
+.instructor img{width:40px;height:40px}
+.enroll-cta{display:flex;gap:10px;flex-wrap:wrap}
+.progress{display:grid;gap:10px}
+.progress-header{display:flex;justify-content:space-between;color:#d3dcff}
+.progress-bar{height:10px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.progress-fill{height:100%;background:linear-gradient(90deg, var(--accent), #58ffd5)}
+.curriculum{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:16px;height:fit-content}
+.lesson-list{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:lesson}
+.lesson-list li{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px;display:flex;align-items:center;gap:10px}
+.lesson-list li .index{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(108,140,255,.22);color:white;font-size:.85rem}
+.lesson-list li button{margin-left:auto}
+
+/* Dashboard */
+.dashboard .dashboard-widgets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.widget{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px}
+.widget-title{color:#d3dcff;margin-bottom:6px}
+.widget-value{font-size:1.6rem;font-weight:700}
+.section-title{margin-top:28px}
+
+/* Page content */
+.page-hero{padding:24px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.checklist{list-style: none;padding-left:0}
+.checklist li{position:relative;padding-left:24px;margin:8px 0}
+.checklist li::before{content:"✔";position:absolute;left:0;top:0;color:var(--accent)}
+.steps{list-style:decimal;padding-left:18px}
+
+/* Auth */
+.auth{display:grid;place-items:center;min-height:calc(100vh - 180px)}
+.auth-card{width:min(460px, 96%);background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.form{display:grid;gap:12px}
+.form label{display:grid;gap:6px;color:#d3dcff}
+.form input, .form select{padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:var(--text)}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,.06);padding:18px 0;background:rgba(11,16,32,.6)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between}
+.footer-links{display:flex;gap:12px}
+
+/* Responsive */
+@media (max-width: 860px){
+  .hero-inner{grid-template-columns:1fr}
+  .course-content-grid{grid-template-columns:1fr}
+  .dashboard .dashboard-widgets{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  .nav{display:none;position:absolute;right:12px;top:64px;background:rgba(11,16,32,.96);padding:10px;border-radius:12px;flex-direction:column;border:1px solid rgba(255,255,255,.08)}
+  .hamburger{display:block;margin-left:auto}
+}

@@ -1,0 +1,83 @@
+{
+  "courses": [
+    {
+      "id": 101,
+      "title": "JavaScript Foundations",
+      "subtitle": "Master the core of modern JS with hands‑on projects",
+      "description": "Learn variables, functions, async patterns, DOM manipulation, modules, and tooling. Build mini‑apps to solidify concepts.",
+      "category": "development",
+      "level": "Beginner",
+      "duration": "6h 45m",
+      "rating": 4.7,
+      "popularity": 98,
+      "added": "2026-01-10",
+      "thumb": "js",
+      "tags": ["javascript", "frontend", "es6"],
+      "instructor": {"name": "Alex Rivera", "bio": "Full‑stack engineer and educator"},
+      "lessons": [
+        {"title":"Intro & Setup","duration":"12m","video":"PkZNo7MFNFg"},
+        {"title":"Variables & Types","duration":"18m","video":"hdI2bqOjy3c"},
+        {"title":"Functions & Scope","duration":"22m","video":"N8ap4k_1QEQ"},
+        {"title":"Arrays & Objects","duration":"24m","video":"R8rmfD9Y5-c"}
+      ]
+    },
+    {
+      "id": 202,
+      "title": "Responsive Web Design",
+      "subtitle": "Design beautiful, accessible, responsive interfaces",
+      "description": "Learn layout systems, fluid typography, accessibility, theming, and design tokens. Build a landing page and dashboard.",
+      "category": "design",
+      "level": "Intermediate",
+      "duration": "5h 10m",
+      "rating": 4.8,
+      "popularity": 91,
+      "added": "2026-02-01",
+      "thumb": "design",
+      "tags": ["css", "ui", "ux"],
+      "instructor": {"name": "Maya Chen", "bio": "Product designer and CSS enthusiast"},
+      "lessons": [
+        {"title":"Layout Basics","duration":"16m","video":"yU7jJ3NbPdA"},
+        {"title":"Grids & Flexbox","duration":"20m","video":"JJSoEo8JSnc"},
+        {"title":"Accessibility Essentials","duration":"18m","video":"3f31oufqFSM"}
+      ]
+    },
+    {
+      "id": 303,
+      "title": "Data Analysis with Python",
+      "subtitle": "Analyze datasets using Pandas, NumPy, and Matplotlib",
+      "description": "Clean, transform, and visualize data. Create reproducible analyses and dashboards.",
+      "category": "data",
+      "level": "Intermediate",
+      "duration": "7h 20m",
+      "rating": 4.6,
+      "popularity": 85,
+      "added": "2025-12-20",
+      "thumb": "data",
+      "tags": ["python", "pandas", "analysis"],
+      "instructor": {"name": "Priya Singh", "bio": "Data scientist and mentor"},
+      "lessons": [
+        {"title":"Pandas 101","duration":"21m","video":"vmEHCJofslg"},
+        {"title":"Visualization","duration":"24m","video":"3Xc3CA655Y4"}
+      ]
+    },
+    {
+      "id": 404,
+      "title": "Digital Marketing Basics",
+      "subtitle": "SEO, SEM, social strategy, and analytics fundamentals",
+      "description": "Plan campaigns, optimize content, measure results, and iterate using data‑driven insights.",
+      "category": "marketing",
+      "level": "Beginner",
+      "duration": "4h 05m",
+      "rating": 4.5,
+      "popularity": 72,
+      "added": "2026-01-22",
+      "thumb": "marketing",
+      "tags": ["seo", "content", "analytics"],
+      "instructor": {"name": "Jordan Lee", "bio": "Growth marketer"},
+      "lessons": [
+        {"title":"SEO Fundamentals","duration":"14m","video":"f_uwKZIAeM0"},
+        {"title":"Analytics Overview","duration":"17m","video":"l5Rgyo_2Jxg"}
+      ]
+    }
+  ]
+}

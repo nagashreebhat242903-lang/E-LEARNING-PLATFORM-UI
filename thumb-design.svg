@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="360" rx="16" fill="#1a224a"/>
+<rect x="60" y="60" width="220" height="220" rx="12" fill="#243064"/>
+<rect x="300" y="60" width="220" height="220" rx="12" fill="#243064"/>
+<rect x="300" y="210" width="220" height="12" rx="6" fill="#6c8cff"/>
+<rect x="300" y="234" width="160" height="12" rx="6" fill="#2be4b6"/>
+<text x="60" y="320" fill="#e9efff" font-family="Inter, Arial" font-size="32" font-weight="800">Responsive Web Design</text>
+</svg>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course • Learnify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/course.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Learnify</a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Courses</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="login.html">Log in</a>
+      <a class="btn btn-primary" href="signup.html">Sign up</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="course-page">
+  <section class="course-hero">
+    <div class="container">
+      <a class="back-link" href="index.html">← Back to catalog</a>
+      <h1 id="courseTitle">Course Title</h1>
+      <p id="courseSubtitle" class="muted">Course subtitle and overview</p>
+      <div class="meta">
+        <span id="courseCategory" class="badge">Category</span>
+        <span id="courseLevel" class="badge">Beginner</span>
+        <span id="courseDuration" class="badge">6h 30m</span>
+        <span id="courseRating" class="badge">4.7 ★</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="course-content">
+    <div class="container course-content-grid">
+      <div class="player-and-details">
+        <div class="video-wrapper">
+          <!-- Video embedding: YouTube iframe placeholder -->
+          <iframe id="courseVideo" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Course video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="course-description">
+          <h2>About this course</h2>
+          <p id="courseDescription">This course covers the fundamentals and hands-on projects to help you learn by building.</p>
+          <div class="instructor">
+            <img id="instructorAvatar" src="assets/img/avatar.svg" alt="Instructor avatar" />
+            <div>
+              <div id="instructorName" class="strong">Instructor Name</div>
+              <div id="instructorBio" class="muted small">Short bio about instructor.</div>
+            </div>
+          </div>
+          <div class="enroll-cta">
+            <button id="enrollBtn" class="btn btn-primary">Enroll for free</button>
+            <button id="markCompleteBtn" class="btn btn-outline">Mark current lesson complete</button>
+          </div>
+          <div class="progress">
+            <div class="progress-header">
+              <span>Progress</span>
+              <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div id="progressFill" class="progress-fill" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="curriculum">
+        <h3>Curriculum</h3>
+        <ol id="lessonList" class="lesson-list">
+          <!-- Lessons injected by JS -->
+        </ol>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="logo" href="index.html">Learnify</a>
+      <p class="muted">Learn anything, anytime. © <span id="year"></span></p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="mailto:support@example.com">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
